@@ -1,0 +1,51 @@
+{
+  "framework": "soc2",
+  "total_controls": 8,
+  "sufficient": 4,
+  "partial": 1,
+  "insufficient": 3,
+  "compliance_score": 56,
+  "controls": [
+    {
+      "id": "CC6.1",
+      "name": "Logical and Physical Access Controls",
+      "status": "sufficient"
+    },
+    {
+      "id": "CC6.2",
+      "name": "New Internal Personnel Access",
+      "status": "sufficient"
+    },
+    {
+      "id": "CC6.3",
+      "name": "Access Removal",
+      "status": "insufficient"
+    },
+    {
+      "id": "CC7.1",
+      "name": "System Monitoring",
+      "status": "partial"
+    },
+    {
+      "id": "CC7.2",
+      "name": "Monitoring of System Components",
+      "status": "insufficient"
+    },
+    {
+      "id": "CC8.1",
+      "name": "Change Management",
+      "status": "sufficient"
+    },
+    {
+      "id": "A1.1",
+      "name": "Availability \u2014 Capacity Planning",
+      "status": "insufficient"
+    },
+    {
+      "id": "PI1.1",
+      "name": "Processing Integrity",
+      "status": "sufficient"
+    }
+  ],
+  "generated_at": "2026-04-14T04:50:47.873538"
+}

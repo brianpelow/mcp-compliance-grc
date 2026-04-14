@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-04-14T04:50:47.082939",
+  "date": "2026-04-14",
+  "frameworks": {
+    "soc2": {
+      "control_count": 8,
+      "controls": [
+        {
+          "id": "CC6.1",
+          "name": "Logical and Physical Access Controls",
+          "category": "Common Criteria"
+        },
+        {
+          "id": "CC6.2",
+          "name": "New Internal Personnel Access",
+          "category": "Common Criteria"
+        },
+        {
+          "id": "CC6.3",
+          "name": "Access Removal",
+          "category": "Common Criteria"
+        },
+        {
+          "id": "CC7.1",
+          "name": "System Monitoring",
+          "category": "Common Criteria"
+        },
+        {
+          "id": "CC7.2",
+          "name": "Monitoring of System Components",
+          "category": "Common Criteria"
+        },
+        {
+          "id": "CC8.1",
+          "name": "Change Management",
+          "category": "Common Criteria"
+        },
+        {
+          "id": "A1.1",
+          "name": "Availability \u2014 Capacity Planning",
+          "category": "Availability"
+        },
+        {
+          "id": "PI1.1",
+          "name": "Processing Integrity",
+          "category": "Processing Integrity"
+        }
+      ]
+    },
+    "iso27001": {
+      "control_count": 5,
+      "controls": [
+        {
+          "id": "A.12.1",
+          "name": "Operational Procedures and Responsibilities",
+          "category": "Operations Security"
+        },
+        {
+          "id": "A.12.4",
+          "name": "Logging and Monitoring",
+          "category": "Operations Security"
+        },
+        {
+          "id": "A.14.2",
+          "name": "Security in Development and Support Processes",
+          "category": "System Acquisition"
+        },
+        {
+          "id": "A.16.1",
+          "name": "Management of Information Security Incidents",
+          "category": "Incident Management"
+        },
+        {
+          "id": "A.17.1",
+          "name": "Information Security Continuity",
+          "category": "Business Continuity"
+        }
+      ]
+    },
+    "pcidss": {
+      "control_count": 6,
+      "controls": [
+        {
+          "id": "PCI-6.3",
+          "name": "Security Vulnerabilities Are Identified and Addressed",
+          "category": "Develop and Maintain Secure Systems"
+        },
+        {
+          "id": "PCI-6.4",
+          "name": "Web-Facing Applications Are Protected",
+          "category": "Develop and Maintain Secure Systems"
+        },
+        {
+          "id": "PCI-7.2",
+          "name": "Access to System Components Is Managed",
+          "category": "Restrict Access to System Components"
+        },
+        {
+          "id": "PCI-10.2",
+          "name": "Audit Logs Are Implemented",
+          "category": "Log and Monitor All Access"
+        },
+        {
+          "id": "PCI-11.3",
+          "name": "External and Internal Vulnerabilities Are Regularly Tested",
+          "category": "Test Security of Systems and Networks"
+        },
+        {
+          "id": "PCI-12.10",
+          "name": "Suspected and Confirmed Security Incidents Are Responded To",
+          "category": "Support Information Security with Organizational Policies"
+        }
+      ]
+    }
+  }
+}
