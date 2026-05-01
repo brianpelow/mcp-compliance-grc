@@ -19,11 +19,11 @@ def draft_compliance_narrative(
         return _fallback_narrative(control, evidence, framework)
 
     try:
-        import anthropic
-        client = anthropic.Anthropic(api_key=api_key)
+        from openai import OpenAI
+        client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=api_key)
 
         evidence_summary = "\n".join(
-            f"- {m.file_path}:{m.line_number} — {m.snippet[:100]}"
+            f"- {m.file_path}:{m.line_number} â€” {m.snippet[:100]}"
             for m in evidence.matches[:10]
         ) or "No evidence found."
 
@@ -49,12 +49,12 @@ Write a 2-3 paragraph compliance narrative that:
 
 Be specific, factual, and professional. No filler."""
 
-        message = client.messages.create(
-            model="claude-sonnet-4-20250514",
+        message = client.chat.completions.create(
+            model="meta-llama/llama-3.1-8b-instruct:free",
             max_tokens=600,
             messages=[{"role": "user", "content": prompt}],
         )
-        return message.content[0].text
+        return message.choices[0].message.content
 
     except Exception:
         return _fallback_narrative(control, evidence, framework)
@@ -67,7 +67,7 @@ def _fallback_narrative(control: Control, evidence: ControlEvidence, framework: 
         "insufficient": "not satisfied",
     }.get(evidence.status, "unknown")
 
-    return f"""## {framework.upper()} Control {control.id} — {control.name}
+    return f"""## {framework.upper()} Control {control.id} â€” {control.name}
 
 **Status**: {status_text.title()}
 
