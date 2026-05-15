@@ -1,10 +1,10 @@
 {
   "framework": "soc2",
   "total_controls": 8,
-  "sufficient": 4,
+  "sufficient": 7,
   "partial": 1,
-  "insufficient": 3,
-  "compliance_score": 56,
+  "insufficient": 0,
+  "compliance_score": 93,
   "controls": [
     {
       "id": "CC6.1",
@@ -19,17 +19,17 @@
     {
       "id": "CC6.3",
       "name": "Access Removal",
-      "status": "insufficient"
+      "status": "partial"
     },
     {
       "id": "CC7.1",
       "name": "System Monitoring",
-      "status": "partial"
+      "status": "sufficient"
     },
     {
       "id": "CC7.2",
       "name": "Monitoring of System Components",
-      "status": "insufficient"
+      "status": "sufficient"
     },
     {
       "id": "CC8.1",
@@ -39,7 +39,7 @@
     {
       "id": "A1.1",
       "name": "Availability \u2014 Capacity Planning",
-      "status": "insufficient"
+      "status": "sufficient"
     },
     {
       "id": "PI1.1",
@@ -47,5 +47,5 @@
       "status": "sufficient"
     }
   ],
-  "generated_at": "2026-05-14T05:54:01.414983"
+  "generated_at": "2026-05-15T06:00:43.865079"
 }
